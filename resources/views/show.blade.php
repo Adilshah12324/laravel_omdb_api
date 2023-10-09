@@ -16,103 +16,61 @@
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered">
-                        <thead>
+                        <thead class="thead-dark">
                         <tr>
-                            <th class="col-sm-2">Title</th>
-                            <td scope="col">{{$data['Title']}}</td>
+                            <th scope="col">Title</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Rated</th>
+                            <th scope="col">Released</th>
+                            <th scope="col">Runtime</th>
+                            <th scope="col">Genre</th>
+                            <th scope="col">Director</th>
+                            <th scope="col">Writer</th>
+                            <th scope="col">Actors</th>
+                            <th scope="col">Plot</th>
+                            <th scope="col">Language</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">Awards</th>
+                            <th scope="col">Poster</th>
+                            <th scope="col">Metascore</th>
+                            <th scope="col">imdbRating</th>
+                            <th scope="col">imdbVotes</th>
+                            <th scope="col">imdbID</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">DVD</th>
+                            <th scope="col">BoxOffice</th>
+                            <th scope="col">Production</th>
+                            <th scope="col">Website</th>
+                            <th scope="col">Response</th>
+
+
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="col">Year</th>
+                            <td scope="col">{{$data['Title']}}</td>
                             <td scope="col">{{$data['Year']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Rated</th>
                             <td scope="col">{{$data['Rated']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Released</th>
                             <td scope="col">{{$data['Released']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Runtime</th>
                             <td scope="col">{{$data['Runtime']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Genre</th>
                             <td scope="col">{{$data['Genre']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Director</th>
                             <td scope="col">{{$data['Director']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Writer</th>
                             <td scope="col">{{$data['Writer']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Actors</th>
                             <td scope="col">{{$data['Actors']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Plot</th>
                             <td scope="col">{{$data['Plot']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Language</th>
                             <td scope="col">{{$data['Language']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Country</th>
                             <td scope="col">{{$data['Country']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Awards</th>
                             <td scope="col">{{$data['Awards']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Poster</th>
-                            <td scope="col">{{$data['Poster']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Metascore</th>
+                            <td scope="col"><img src="{{$data['Poster']}}"></td>
                             <td scope="col">{{$data['Metascore']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">imdbRating</th>
                             <td scope="col">{{$data['imdbRating']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">imdbVotes</th>
                             <td scope="col">{{$data['imdbVotes']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">imdbID</th>
                             <td scope="col">{{$data['imdbID']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Type</th>
                             <td scope="col">{{$data['Type']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">DVD</th>
                             <td scope="col">{{$data['DVD']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">BoxOffice</th>
                             <td scope="col">{{$data['BoxOffice']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Production</th>
                             <td scope="col">{{$data['Production']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Website</th>
                             <td scope="col">{{$data['Website']}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="col">Response</th>
                             <td scope="col">{{$data['Response']}}</td>
                         </tr>
                         </tbody>
