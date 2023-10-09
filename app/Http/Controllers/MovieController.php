@@ -15,12 +15,15 @@ class MovieController extends Controller
         $response = $client->get("https://www.omdbapi.com/?t=$movieTitle&apikey=$apiKey");
 
         if ($response->getStatusCode() === 200) {
-            $data = json_decode($response->getBody());
+            $data = json_decode($response->getBody(), true);
 
-
-            return response()->json($data);
+            return view('show', compact('data'));
         } else {
             return redirect('/')->with('error', 'Failed to fetch movie data.');
         }
+    }
+
+    public function show(){
+
     }
 }

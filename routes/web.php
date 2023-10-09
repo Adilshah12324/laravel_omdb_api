@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get('/search-movies',[\App\Http\Controllers\MovieController::class,'index'])->name('getomdbApi');
+Route::get('/movie-detail',[\App\Http\Controllers\MovieController::class,'show'])->name('getMovies');
